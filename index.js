@@ -3,7 +3,7 @@ const sqlite3 = require('sqlite3').verbose();
 const { open } = require('sqlite');
 
 const app = express();
-const PORT = 3010;
+const port = 3000;
 
 let db;
 
