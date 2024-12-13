@@ -3,14 +3,14 @@ const sqlite3 = require('sqlite3').verbose();
 const { open } = require('sqlite');
 
 const app = express();
-const port = 3000;
+const PORT = 3000;
 
 let db;
 
 // Initialize the database connection
 (async () => {
   db = await open({
-    filename: './BD4_Assignment1/database.sqlite', 
+    filename: './database.sqlite', 
     driver: sqlite3.Database,
   });
 
