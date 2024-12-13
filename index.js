@@ -10,7 +10,7 @@ let db;
 // Initialize the database connection
 (async () => {
   db = await open({
-    filename: './database.sqlite', 
+    filename: './database1.sqlite', 
     driver: sqlite3.Database,
   });
 
