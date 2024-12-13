@@ -7,10 +7,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 let db;
 
+const path = require('path');
+const dbPath = path.join(__dirname, 'BD4_Assignment1', 'database.sqlite');
+
 // Initialize the database connection
 (async () => {
   db = await open({
-    filename: './BD4_Assignment1/database.sqlite', 
+    filename: dbPath, 
     driver: sqlite3.Database,
   });
 
